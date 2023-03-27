@@ -5,6 +5,7 @@
 $ make all
 $ ./mathlib-test {args}
 $ make clean
+$ make cleangraph
 ```
 
 ## How to use plotting script

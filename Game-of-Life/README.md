@@ -5,7 +5,6 @@
 $ make
 $ ./life {options}
 $ make clean
-$ make cleangraph
 ```
 ### Files
 - life.c
