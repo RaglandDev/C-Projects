@@ -5,6 +5,8 @@
 
 static int e_i = 0;
 
+// Returns value of Euler's number
+// Checks graph parameter. If graph is true, prints output
 double e(bool graph) {
     int k = 0;
     double e_sum = 0;

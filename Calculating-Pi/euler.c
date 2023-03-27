@@ -5,6 +5,8 @@
 
 static int euler_i = 0;
 
+// Returns value of pi calculated using Euler's method
+// Checks graph parameter. If graph is true, prints output
 double pi_euler(bool graph) {
     double k = 1;
     double euler_sum = 0;

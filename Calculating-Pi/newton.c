@@ -5,6 +5,7 @@
 
 static int sqrt_i = 0;
 
+// Returns value of sqrt(x) calculated using Newton's method
 double sqrt_newton(double x) {
     sqrt_i = 0;
     double guess = x;

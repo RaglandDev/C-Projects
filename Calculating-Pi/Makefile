@@ -45,3 +45,6 @@ format:
 
 clean:
 	rm -f mathlib-test *.o *.txt 
+
+cleangraph:
+	rm -f bbp.pdf e.pdf euler.pdf madhava.pdf sqrt.pdf viete.pdf

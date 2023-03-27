@@ -5,6 +5,8 @@
 
 static int madhava_i = 0;
 
+// Returns value of pi calculated using Madhava series
+// Checks graph parameter. If graph is true, prints output
 double pi_madhava(bool graph) {
     double k = 0;
     double madhava_sum = 0;

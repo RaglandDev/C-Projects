@@ -5,6 +5,8 @@
 
 static int viete_i = 0;
 
+// Returns value of pi calculated using Viete formula
+// Checks graph parameter. If graph is true, prints output
 double pi_viete(bool graph) {
     double root = sqrt_newton(2);
     double base = 2;

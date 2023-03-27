@@ -5,6 +5,8 @@
 
 static int bbp_i = 0;
 
+// Returns value of pi calculated using BBP
+// Checks graph parameter. If graph is true, prints output
 double pi_bbp(bool graph) {
     double k = 0;
     double POW = 1;
