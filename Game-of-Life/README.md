@@ -15,3 +15,5 @@ $ make clean
 - README.md
 - DESIGN.pdf
 - WRITEUP.pdf
+
+### 101.txt is provided as a test input file
