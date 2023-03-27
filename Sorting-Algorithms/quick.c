@@ -1,5 +1,5 @@
 #include "quick.h"
-
+#include "set.h"
 uint32_t partition(Stats *stats, uint32_t *A, uint32_t lo, uint32_t hi) {
     uint32_t i, j;
     i = lo - 1;

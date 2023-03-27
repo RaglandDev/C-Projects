@@ -7,12 +7,13 @@
 #include <unistd.h>
 
 // Sort functions
-#include "batcher.c"
-#include "heap.c"
-#include "quick.c"
-#include "set.c"
-#include "shell.c"
-#include "stats.c"
+#include "batcher.h"
+#include "heap.h"
+#include "quick.h"
+#include "set.h"
+#include "shell.h"
+#include "stats.h"
+#include "set.h"
 
 #define OPTIONS "gahbsqr:n:p:H"
 
@@ -219,6 +220,10 @@ int main(int argc, char **argv) {
     //}
 
     clock_t difference = (clock() - before) / CLOCKS_PER_SEC;
-    printf("%ld seconds\n", difference);
+
+    if (flags != set_empty())
+    {
+        printf("%ld seconds\n", difference);
+    }
     return 0;
 }

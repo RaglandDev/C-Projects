@@ -5,7 +5,8 @@ OBJECTS = sorting.o batcher.o shell.o heap.o quick.o stats.o set.o
 all: sorting 
 
 sorting: $(OBJECTS)
-	$(CC) -lm -o sorting sorting.o
+	$(CC) $(CFLAGS) -lm -o sorting $(OBJECTS)
+
 
 sorting.o: sorting.c
 	$(CC) $(CFLAGS) -c sorting.c

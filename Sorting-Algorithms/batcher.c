@@ -1,5 +1,5 @@
 #include "batcher.h"
-
+#include "set.h"
 #include <math.h>
 
 static uint32_t bit_l = 0;

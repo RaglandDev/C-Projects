@@ -1,5 +1,5 @@
 #include "shell.h"
-
+#include "set.h"
 #include "gaps.h"
 
 void shell_sort(Stats *stats, uint32_t *arr, uint32_t length) {
