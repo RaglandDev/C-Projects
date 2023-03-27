@@ -32,6 +32,9 @@ set.o: set.c
 clean:
 	rm -f sorting *.o *.txt
 
+cleangraph:
+	rm -f all.pdf batcher.pdf heap.pdf quick.pdf shell.pdf
+
 format:
 	clang-format -i -style=file *.[ch]
 
