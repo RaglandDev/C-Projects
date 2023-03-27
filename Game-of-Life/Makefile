@@ -1,4 +1,4 @@
-CC = clang-15
+CC = clang
 CFLAGS = -Wall -Wextra -Werror -Wpedantic
 OBJECTS = life.o universe.o
 LINKS = -lncurses

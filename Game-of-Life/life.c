@@ -27,9 +27,18 @@ int main(int argc, char **argv) {
         case 'n': generations = (uint32_t) strtoul(optarg, NULL, 10); break;
         case 'i':
             input = fopen(optarg, "r");
+            if (input == 0)
+            {
+                return -1;
+            }
             run = true;
             break;
-        case 'o': output = fopen(optarg, "w"); break;
+        case 'o': output = fopen(optarg, "w");
+        if (output == 0)
+        {
+            return -1;
+        } 
+        break;
         case 'h': help = true; break;
         }
     }
