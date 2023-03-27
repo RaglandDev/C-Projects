@@ -1,7 +1,7 @@
-CC = clang-15
+CC = clang
 CFLAGS = -Wall -Wextra -Werror -Wpedantic `pkg-config --cflags gmp` 
 OBJECTS = randstate.o numtheory.o ss.o 
-LFLAGS = `pkg-config --libs gmp` -lm
+LFLAGS = `pkg-config --libs gmp` -lm -lgmp
 
 all: keygen encrypt decrypt
 
@@ -31,4 +31,4 @@ format:
 	clang-format -i -style=file *.[ch]
 
 clean:
-	rm -f *.o *.txt keygen encrypt decrypt
+	rm -f *.o *.txt keygen encrypt decrypt *.priv *.pub
