@@ -7,7 +7,8 @@ $ ./sorting [options]
 ```
 ## Clean Directory
 ```
-# make clean
+$ make clean
+$ make cleangraph
 ```
 ## Generate Graphs
 ```
